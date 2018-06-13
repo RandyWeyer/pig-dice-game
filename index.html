@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Pig dice game</h1>
+    <h1 class="jumbotron ">Pig dice game</h1>
     <form id="game-input">
       <label for="players">Select no. of players</label>
       <select class="form-control" id="player-number">
@@ -37,26 +37,35 @@
       <button type="submit" class="btn btn-success">Lets play!</button>
     </form>
 
+    <div class="row">
+      <div class="col-md-6">
 
-    <div class="initial-hide player-one">
+
+    <div class="initial-hide">
       <h3>Player 1</h3>
       <h3>Total: <span id="player-one-total"></span></h3>
+      <div class="player-one">
       <h3>Round Total: <span id= "player-one-round-total"></span></h3>
 
       <button type="button" id="roll-player-one" class="btn btn-success">Roll!</button>
       <button type="button" id="hold-player-one" class="btn btn-danger">Hold!</button>
-
     </div>
+    </div>
+  </div>
+    <div class="col-md-6">
 
-    <div class="initial-hide player-two">
+    <div class="initial-hide">
       <h3>Player 2</h3>
       <h3>Total: <span id="player-two-total"></span></h3>
+      <div class="player-two">
       <h3>Round Total: <span id= "player-two-round-total"></span></h3>
 
       <button type="button" id="roll-player-two" class="btn btn-success">Roll!</button>
       <button type="button" id="hold-player-two" class="btn btn-danger">Hold!</button>
-
     </div>
+</div>
+    </div>
+  </div>
     <p><span class="result"></span></p>
 
 

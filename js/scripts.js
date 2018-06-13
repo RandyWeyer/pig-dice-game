@@ -81,7 +81,7 @@ $(document).ready(function(){
     var playerNumber = $("#player-number").val();
     var dice = $("#dice").val();
     var goal = $("#goal").val();
-    var gameSetup = new gameInput(playerNumber, dice, goal);
+    gameSetup = new gameInput(playerNumber, dice, goal);
     $("#game-input").hide();
 
     $(".initial-hide").show();
@@ -93,30 +93,30 @@ $(document).ready(function(){
     roll(dice);
     $("#player-one-total").text(playerOneScore);
     $("#player-one-round-total").text(roundScore);
-    $("#player-two-total").text(playerTwoScore);
-    $("#player-two-round-total").text(roundScore);
+    // $("#player-two-total").text(playerTwoScore);
+    // $("#player-two-round-total").text(roundScore);
   });
   $("#hold-player-one").click(function(event) {
     event.preventDefault();
     hold();
     $("#player-one-total").text(playerOneScore);
     $("#player-one-round-total").text(roundScore);
-    $("#player-two-total").text(playerTwoScore);
-    $("#player-two-round-total").text(roundScore);
+    // $("#player-two-total").text(playerTwoScore);
+    // $("#player-two-round-total").text(roundScore);
   });
   $("#roll-player-two").click(function(event) {
     event.preventDefault();
     roll(dice);
-    $("#player-one-total").text(playerOneScore);
-    $("#player-one-round-total").text(roundScore);
+    // $("#player-one-total").text(playerOneScore);
+    // $("#player-one-round-total").text(roundScore);
     $("#player-two-total").text(playerTwoScore);
     $("#player-two-round-total").text(roundScore);
   });
   $("#hold-player-two").click(function(event) {
     event.preventDefault();
     hold();
-    $("#player-one-total").text(playerOneScore);
-    $("#player-one-round-total").text(roundScore);
+    // $("#player-one-total").text(playerOneScore);
+    // $("#player-one-round-total").text(roundScore);
     $("#player-two-total").text(playerTwoScore);
     $("#player-two-round-total").text(roundScore);
   });
